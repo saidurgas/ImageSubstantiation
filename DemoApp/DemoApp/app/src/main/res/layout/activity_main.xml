@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlvCtegoryType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCategotyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Category     " />
+
+        <EditText
+            android:id="@+id/extCatValue"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvCategotyTitle" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlvProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvCtegoryType">
+
+        <TextView
+            android:id="@+id/tvProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Provider  " />
+
+        <EditText
+            android:id="@+id/edtProviderValue"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvProvider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlvclaimAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvProvider">
+
+        <TextView
+            android:id="@+id/tvClaimAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Amount        " />
+
+        <EditText
+            android:id="@+id/edtAmountValue"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvClaimAmount" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlvclaimDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvclaimAmount">
+
+        <TextView
+            android:id="@+id/tvClaimDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Date              " />
+
+        <EditText
+            android:id="@+id/edtDateValue"
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvClaimDate" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlvImageAndButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvclaimDate">
+
+        <ImageView
+            android:id="@+id/ivClaimImage"
+            android:src="@mipmap/ic_launcher"
+            android:fitsSystemWindows="true"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+        <Button
+            android:id="@+id/btnAddArecepit"
+            android:text="Add A Receipt"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_margin="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivClaimImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlvclaimresponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvImageAndButton"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvClaimresponse"
+
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlvSunmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvImageAndButton">
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Parascript-Webservice-Client">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DemoApp/app/libs/Parascript-Webservice-Client.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/DemoApp/app/libs/Parascript-Webservice-Client.jar!/" />
+    </SOURCES>
+  </library>
+</component>
